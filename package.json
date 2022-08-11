@@ -1,0 +1,14 @@
+{
+  "name": "simple-site-response-monitoring",
+  "version": "1.0.0",
+  "description": "Simple test of page load responsiveness",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Michael Wood",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.27.2"
+  }
+}
