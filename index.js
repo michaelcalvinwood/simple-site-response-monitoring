@@ -20,7 +20,7 @@ const checkResponseTime = async () => {
             }
             try {
                 start = Date.now();
-                response = await axios(request);
+                await axios(request);
                 end = Date.now();
                 console.log(`${end - start}ms: ${request.url}`);
             } catch (err) {
