@@ -1,4 +1,4 @@
-const waitSeconds = 3;
+const waitSeconds = 2;
 
 const axios = require('axios');
 const fs = require('fs');
@@ -22,7 +22,7 @@ const checkResponseTime = async () => {
                 start = Date.now();
                 await axios(request);
                 end = Date.now();
-                console.log(`${end - start}ms: ${request.url}`);
+                console.log(`${end - start}ms: ${request.url} [${response.data.length}]`);
             } catch (err) {
                 console.log(`Axios Error ${err.message}: cannot fetch ${request.url}`);
             }
